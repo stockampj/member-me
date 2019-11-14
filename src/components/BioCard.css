@@ -1,0 +1,16 @@
+.bio-card {
+  width: 400px;
+  height: 600px;
+  margin: 10px;
+  background-color: lightgray;
+  border: solid 1px red;
+}
+
+.suggestions:hover {                                                                                               
+  background-color: aqua;
+}
+
+
+/* img {
+  height: 200px;
+}  */

@@ -1,7 +1,8 @@
 import React from 'react';
+import './BioFeed.css';
 import BioCard from './BioCard';
 
-var BioList = [
+var bioList = [
   {
     imgURL: 'https://sadanduseless.b-cdn.net/wp-content/uploads/2019/02/nicolas-cage-catge4.jpg',
     name: '&rew',
@@ -15,12 +16,12 @@ var BioList = [
   {
     imgURL: 'https://sadanduseless.b-cdn.net/wp-content/uploads/2019/02/nicolas-cage-catge6.jpg',
     name: 'Brendon',
-    bio: 'I use technology for communication, but I don\'t have a BLaackberry or an iPhone. I use an outdated cell phone, but I\'m fine with it.'
+    bio: 'I use technology for communication, but I don\'t have a Blackberry or an iPhone. I use an outdated cell phone, but I\'m fine with it.'
   },
   {
     imgURL: 'https://sadanduseless.b-cdn.net/wp-content/uploads/2019/02/nicolas-cage-catge13.jpg',
     name: 'Carrie',
-    bio: 'The end of the wrold is on people\'s minds. We have teh power to destroy or save ourselves, but the question is what do you do with that responsibility?'
+    bio: 'The end of the world is on people\'s minds. We have the power to destroy or save ourselves, but the question is what do you do with that responsibility?'
 
   },
   {
@@ -56,7 +57,7 @@ var BioList = [
   {
     imgURL: 'https://sadanduseless.b-cdn.net/wp-content/uploads/2019/02/nicolas-cage-catge18.jpg',
     name: 'Jaykwellin',
-    bio: 'Picasso said, \"Art is a lie that tells the truth.\" What if you just want to tell the truth and not lie about it?'
+    bio: 'Picasso said, "Art is a lie that tells the truth." What if you just want to tell the truth and not lie about it?'
   },
   {
     imgURL: 'https://sadanduseless.b-cdn.net/wp-content/uploads/2019/02/nicolas-cage-catge14.jpg',
@@ -69,7 +70,7 @@ var BioList = [
     bio: 'I\'ve always started a movie with a song in my heart, and even when I\'m a little unclear about it, something magical happens.'
   },
   {
-    imgURL: '',
+    imgURL: 'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/14d90cb5-7b98-4d46-b170-4a00f01f6950/d7q00p1-927d0d55-0f47-4a23-aeb5-b79772cd837e.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzE0ZDkwY2I1LTdiOTgtNGQ0Ni1iMTcwLTRhMDBmMDFmNjk1MFwvZDdxMDBwMS05MjdkMGQ1NS0wZjQ3LTRhMjMtYWViNS1iNzk3NzJjZDgzN2UucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.gheYwtVEWC8-68VTcjdW-OxFXU8aD5LNSlNz6QkWEeU',
     name: 'Kira',
     bio: 'Snakes are sometimes perceived as evil, but they are also perceived as medicine. If you look at an ambulance, there\'s the two snakes on the side of the ambulance. The caduceus, or the staff of Hermes, there\'s the two snakes going up it, which means that the venom can also be healing.'
   },
@@ -123,5 +124,22 @@ var BioList = [
     name: 'Joel',
     bio: 'If you\'re really special, meaning you\'re doing something unique and original, it could scare people.'
   }
+];
 
-]
+function BioFeed(){
+  return(
+    <div className='flex-container'>
+      {bioList.map((alum, index)=>
+        <BioCard
+          imgURL={alum.imgURL}
+          name={alum.name}
+          bio={alum.bio}
+          key={index}
+        />
+      )}
+    </div>
+
+  );
+}
+
+export default BioFeed;

@@ -26,15 +26,6 @@ function NavBar() {
             </li>
           </ul>
         </div>
-        <div className='right-cluster'>
-          <p>
-
-          <Link className='btn shopping-icon' to='/HotPicks'><i className='fas fa-shopping-bag'></i></Link> 
-
-          </p>
-        </div>
-
-
       </div>
 
 
