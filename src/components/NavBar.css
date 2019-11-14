@@ -1,0 +1,88 @@
+.top-nav-row {
+  position: fixed;
+  top: 0px;
+  height: 40px;
+  width: 110%;
+
+  background-color: black;
+  color: white; 
+}
+
+.bottom-nav-row {
+  position: fixed;
+  top: 40px;
+  height: 40px;
+  width: 110%;
+  background-color: rgba(255, 255, 255, 0);
+  color: rgba(255, 255, 255, 1);
+  overflow: hidden;
+  z-index: 1;
+  border: none;
+}
+
+.bottom-nav-row:hover {
+  background-color: rgba(255, 255, 255, 1);
+  border-bottom: thin gray solid;
+}
+
+.home-button {
+  background-color: white;
+  border-radius: 0%;
+  font-family: 'Hind Madurai', sans-serif;
+  font-weight: 800;
+  color: gray;
+  margin-left: -30px;
+  height: 40px;
+  border: none;
+}
+
+.nav-section {
+  font-family: 'Hind Madurai', sans-serif;
+  font-weight: 600;
+  color: gray;
+  float: left;
+}
+
+li {
+  list-style: none;
+}
+
+input {
+  float: right;
+  border-radius: 20px;
+  border: solid 2px blue;
+  height: 40px;
+  width: 250px;
+  margin-right: 20px;
+}
+
+
+
+.right-cluster {
+  position: fixed;
+  right: 20px;
+  top: 30px; 
+}
+
+.left-cluster {
+  margin-left: 10px;
+}
+
+.shopping-icon {
+  color: gray;
+  font-size: 30px;
+}
+
+
+.collapse {
+    width: 500px;
+    color: black;
+  }
+
+.dropdown-toggle {
+  width: 500px;
+}
+
+.fas {
+  font-size: 1.5em;
+}
