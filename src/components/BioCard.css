@@ -10,7 +10,13 @@
   background-color: aqua;
 }
 
+.img-holder{
+  margin: 5%;
+  height: 300px;
+  overflow: hidden;  
+}
 
-/* img {
-  height: 200px;
-}  */
+img {
+  height: 400px;
+  margin-top: -50px;
+} 
